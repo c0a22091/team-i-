@@ -14,7 +14,6 @@ class pnwsmarty{
        $this->smarty = new Smarty();
        $this->smarty->template_dir = realpath(__DIR__)."/templates/";
        $this->smarty->compile_dir = realpath(__DIR__). "/templates_c/";
-
     }
 
     public function getTpl(){

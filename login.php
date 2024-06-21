@@ -30,11 +30,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>ログイン</title>
-    <style>
-    body {
-    color: gray;
-}
-    </style>
+    <link rel="stylesheet" href="templates_c\styles2.css">
+    <nav>
+            <ul>
+                <li><a href="templates/home.html">ホーム</a></li>
+                <li><a href="templates/register.html">会員登録</a></li>
+            </ul>
+        </nav>
+    
+
+    
 </head>
 <body>
     <h1>ログイン</h1>

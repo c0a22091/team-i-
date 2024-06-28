@@ -39,4 +39,26 @@ $conn = null;
 ?>
 
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会員登録</title>
+    <link rel="stylesheet" href="..\templates_c\styles2.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+        <ul>
+        <li><a href="/2024i/templates/home.html">ホーム</a></li>
+        <li><a href="/2024i/login.php">ログイン</a></li>
+        </ul>
+    </nav>    
+        </nav>
+    </header>
+
+
+
 

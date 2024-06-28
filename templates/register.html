@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新規会員登録</title>
+    <title>会員登録</title>
+    <link rel="stylesheet" href="..\templates_c\styles2.css">
+    
+    <nav>
+        <ul>
+            <li><a href="../templates/home.html">ホーム</a></li>
+            <li><a href="../login.php">ログイン</a></li>
+        </ul>
+    </nav>
+
 </head>
 <body>
-    <h1>新規会員登録</h1>
+    <h1>会員登録</h1>
     <form action="../register.php" method="POST">
         <label for="user_name">ユーザー名:</label>
         <input type="text" id="user_name" name="user_name" required><br>
@@ -22,5 +31,7 @@
 
         <button type="submit">登録</button>
     </form>
+
+    
 </body>
 </html>

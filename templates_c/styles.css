@@ -1,85 +1,69 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family:inherit;
+    font-size:20px;
     margin: 0;
     padding: 0;
+    background-size:cover;
 }
+.example {
+  position: static;
+  }
+.example a {/*aタグを画像の真ん中に*/
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 60px;/*文字サイズ*/
+  border: solid white 6px; /*線で囲う*/
+  padding: 21px;/*文字と線の間の余白*/
+  color: white;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
+.example a:hover{/*カーソルを当てたとき*/
+  background: rgba(255,255,255,0.3);/*背景を半透明に*/
+  }
 
-header h1 {
-    margin: 0;
-}
+.example img {
+  width: 100%;
+  }
+.example1 {
+  position: static;
+  }
+.example1 a {/*aタグを画像の真ん中に*/
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 60px;/*文字サイズ*/
+  border: solid white 6px; /*線で囲う*/
+  padding: 21px;/*文字と線の間の余白*/
+  color: white;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+.example1 a:hover{/*カーソルを当てたとき*/
+  background: rgba(255, 255, 255, 0.3);/*背景を半透明に*/
+  }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #5cb85c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #4cae4c;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.example1 img {
+  width: 100%;
+  }
+.btn {
+  position: absolute;
+  top: 8%;
+  left: 90%;
+ border-radius: 5px;
+ background-color: blueviolet;
+ padding: 10px;
+ text-decoration: none;
+ color: white;
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -96,7 +97,6 @@
 </head>
 <body>
   <h1>予約完了</h1>
-
   <div class="content">
     <p class="details">
       ご予約ありがとうございます。予約が正常に完了しました。<br>
@@ -105,7 +105,7 @@
 
     <p class="details">
       予約番号: 12345678<br>
-      フライト: 東京  →<?php echo htmlspecialchars($_GET['location']); ?><br>
+      フライト: 東京 (HND) →  <?php echo htmlspecialchars($_GET['location']); ?>(KIX)<br>
       出発日時: 2024年7月15日 10:00<br>
       席: 12A<br>
     </p>
@@ -113,7 +113,12 @@
     <p class="details">
       メールで確認メッセージを送信しました。ご確認ください。
     </p>
-    <a href="user.php" class="btn1">ホームに戻る</a>
+
+    <?php if (isset($_SESSION['user_name'])): ?>
+    <a href="../user.php" class="btn">ログアウトしてホームに戻る</a>
+    <?php else: ?>
+    <a href="/2024i/templates/home.html" class="btn1">ログアウトしてホームに戻る</a>
+    <?php endif; ?>
 
     
   </div>

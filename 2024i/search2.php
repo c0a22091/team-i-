@@ -36,5 +36,5 @@ $smarty->assign('search', $search);
 $smarty->assign('results', $results);
 
 // テンプレートを表示
-$smarty->display('search2.htmls');
+$smarty->display('search2.html');
 ?>

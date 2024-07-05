@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2024-07-05 07:44:51
+/* Smarty version 3.1.39, created on 2024-07-05 10:11:27
   from 'C:\xampp\htdocs\2024i\templates\search3.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_66878853e3a630_84901774',
+  'unifunc' => 'content_6687aaaf702c68_97492369',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6f9b44d9ccc6fa6544777eda8ef78146ecff5086' => 
     array (
       0 => 'C:\\xampp\\htdocs\\2024i\\templates\\search3.html',
-      1 => 1720158008,
+      1 => 1720166096,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66878853e3a630_84901774 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6687aaaf702c68_97492369 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -28,9 +28,59 @@ function content_66878853e3a630_84901774 (Smarty_Internal_Template $_smarty_tpl)
     <title>国内検索</title>
     <!-- <link rel="stylesheet" href="..\templates_c\styles.css">//cssと繋げる -->
 </head>
-<body>
+
+        <style>
+            body {
+                font-family: 'Amatic SC', cursive;
+                margin: 0;
+                padding: 0;
+                background: url('https://drstoopen.com.mx/img/413745.png') no-repeat center center fixed;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;    
+            }
+
+            .font{
+                text-align: center;
+                margin-top: 30px;
+                color: rgb(255, 255, 255);
+                font-size: 30px;
+                -webkit-text-stroke: 1px #8800ff;
+             text-shadow: 0px 4px 8px #370067a4;
+                animation: fadeInDown 1s ease-out;
+                animation: fadeInDown 1s ease-out;
+            }
+            .h1{
+                text-align: center;
+                margin-top: 30px;
+                color: rgb(255, 255, 255);
+                font-size: 30px;
+             -webkit-text-stroke: 1px #8800ff;
+             text-shadow: 0px 4px 8px #370067a4;
+                animation: fadeInDown 1s ease-out;
+            }
+            .h2{
+                text-align: center;
+                margin-top: 30px;
+                color: rgb(255, 255, 255);
+                font-size: 30px;
+             -webkit-text-stroke: 1px #8800ff;
+             text-shadow: 0px 4px 8px #370067a4;
+                animation: fadeInDown 1s ease-out;
+            }
+            .ken{
+                text-align: center;
+                margin-top: 30px;
+                font-size: 30px;
+                animation: fadeInDown 1s ease-out;
+            }
+
+        </style>
+    <body>
     <header>
-        <h1>国内検索</h1>
+        <div class ="h1">
+        <h1>国内検索</h1></div>
     </header>
     <main>
         <section>
@@ -46,19 +96,22 @@ function content_66878853e3a630_84901774 (Smarty_Internal_Template $_smarty_tpl)
                 <input type="date" id="departure_date" name="departure_date" required>
                 <button type="submit">検索</button>
             </form> -->
+            <div class="h2">
             <h2>フライト検索</h2>
-            <p>行きたい場所を入力してください</p>
+            <p>行きたい場所を入力してください</p></div>
             <form method="post" action="">
             <!-- <label for="search">到着地:</label> -->
+            <div class="ken">
                 <input type="text" name="search" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search']->value, ENT_QUOTES, 'UTF-8', true);?>
 ">
-                <input type="submit" value="検索">
+                <input type="submit" value="検索"></div>
                 <!-- <form method="post" action="">
                     <input type="text" name="search" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search']->value, ENT_QUOTES, 'UTF-8', true);?>
 ">
                     <input type="submit" value="検索"> -->
             </form>
             <?php if ($_smarty_tpl->tpl_vars['search']->value) {?>
+            <div class ="font">
                 <h2>検索結果</h2>
                 <?php if (count($_smarty_tpl->tpl_vars['results']->value) > 0) {?>
                     <ul>
@@ -68,20 +121,20 @@ $_smarty_tpl->tpl_vars['article']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['article']->value) {
 $_smarty_tpl->tpl_vars['article']->do_else = false;
 ?>
-                            <li><strong><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['article']->value[1], ENT_QUOTES, 'UTF-8', true);?>
+                        <li><a href="yoyaku.php?location=<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['article']->value[2], ENT_QUOTES, 'UTF-8', true);?>
+"><strong><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['article']->value[1], ENT_QUOTES, 'UTF-8', true);?>
 </strong>: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['article']->value[2], ENT_QUOTES, 'UTF-8', true);?>
-</li>
+ </a></li>
                         <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     </ul>
                 <?php } else { ?>
-                    <p>一致する結果が見つかりませんでした。</p>
+                    <p>一致する結果が見つかりませんでした。</p></div>
                 <?php }?>
             <?php }?>
         </section>
     </main>
 </body>
-</html>
-<?php }
+</html><?php }
 }

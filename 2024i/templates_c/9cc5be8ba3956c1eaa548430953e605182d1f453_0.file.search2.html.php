@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2024-07-05 10:13:08
-  from 'C:\xampp\htdocs\2024i\templates\search4.html' */
+/* Smarty version 3.1.39, created on 2024-07-05 10:10:39
+  from 'C:\xampp\htdocs\2024i\templates\search2.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6687ab149f6192_07318585',
+  'unifunc' => 'content_6687aa7f14cb51_58518299',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '046ecc88ccd493e153bddf57cc4c3d04a8efb985' => 
+    '9cc5be8ba3956c1eaa548430953e605182d1f453' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\2024i\\templates\\search4.html',
-      1 => 1720166191,
+      0 => 'C:\\xampp\\htdocs\\2024i\\templates\\search2.html',
+      1 => 1720166099,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6687ab149f6192_07318585 (Smarty_Internal_Template $_smarty_tpl) {
-?><!DOCTYPE html>
+function content_6687aa7f14cb51_58518299 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -119,7 +120,7 @@ $_smarty_tpl->tpl_vars['article']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['article']->value) {
 $_smarty_tpl->tpl_vars['article']->do_else = false;
 ?>
-                        <li><a href="yoyaku.php?location=<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['article']->value[2], ENT_QUOTES, 'UTF-8', true);?>
+                        <li><a href="n_yoyaku.php?location=<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['article']->value[2], ENT_QUOTES, 'UTF-8', true);?>
 "><strong><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['article']->value[1], ENT_QUOTES, 'UTF-8', true);?>
 </strong>: <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['article']->value[2], ENT_QUOTES, 'UTF-8', true);?>
  </a></li>

@@ -113,7 +113,12 @@
     <p class="details">
       メールで確認メッセージを送信しました。ご確認ください。
     </p>
-    <a href="user.php" class="btn1">ホームに戻る</a>
+
+    <?php if (isset($_SESSION['user_name'])): ?>
+    <a href="../user.php" class="btn">ログアウトしてホームに戻る</a>
+    <?php else: ?>
+    <a href="/2024i/templates/home.html" class="btn1">ログアウトしてホームに戻る</a>
+    <?php endif; ?>
 
     
   </div>

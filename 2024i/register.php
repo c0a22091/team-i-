@@ -29,7 +29,7 @@ try {
     $stmt->bindParam(':password', $pass);
     $stmt->execute();
 
-    echo "新規会員登録が完了しました。";
+    echo "新規会員登録が完了しました";
 } catch(PDOException $e) {
     echo "エラーが発生しました: " . $e->getMessage();
 }
@@ -48,12 +48,11 @@ $conn = null;
     <link rel="stylesheet" href="..\templates_c\styles2.css">
 </head>
 <style>
-/* styles2.css */
 
 /* Reset styles */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 20;
     box-sizing: border-box;
 }
 

@@ -129,14 +129,14 @@ session_start();
     <div class="card">
       <img src="https://bluegreen.jp/wp-content/uploads/2019/07/IMGP0184--1024x768.jpg" alt="国内線">
       <div class="card-content">
-        <a href="complete.php">国内線</a>
+        <a href="search3.php">国内線</a>
       </div>
     </div>
 
     <div class="card">
       <img src="https://bluegreen.jp/wp-content/uploads/2019/07/IMGP0184--1024x768.jpg" alt="国際線">
       <div class="card-content">
-        <a href="https://www.jal.co.jp/jp/ja/">国際線</a>
+        <a href="search4.php">国際線</a>
       </div>
     </div>
 

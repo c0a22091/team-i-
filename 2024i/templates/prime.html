@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>特別サービス - GALAXY AIRLINES</title>
+  <title>会員ランク - GALAXY AIRLINES</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
     
@@ -26,6 +26,8 @@
       animation: fadeInDown 1s ease-out;
     }
 
+    
+
     .content {
       max-width: 800px;
       padding: 20px;
@@ -36,7 +38,7 @@
       animation: fadeIn 1s ease-out;
     }
 
-    .service-card {
+    .rank-card {
       margin: 20px 0;
       padding: 20px;
       background: rgba(255, 255, 255, 0.1);
@@ -44,14 +46,30 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .service-card h2 {
+    .rank-card h2 {
       margin-top: 0;
       font-size: 30px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    .service-card p {
+    .rank-card p {
       font-size: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: blueviolet;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      animation: fadeIn 1s ease-out;
+      margin-top: 20px;
+    }
+
+    .btn:hover {
+      background-color: #6a0dad;
     }
 
     @keyframes fadeInDown {
@@ -73,46 +91,37 @@
         opacity: 1;
       }
     }
-
-    .btn {
-      padding: 10px 20px;
-      background-color: blueviolet;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      font-size: 18px;
-      transition: background-color 0.3s ease;
-      animation: fadeIn 1s ease-out;
-      margin-top: 20px;
-    }
-
-    .btn:hover {
-      background-color: #6a0dad;
-    }
   </style>
 </head>
 <body>
-  <h1>特別サービス</h1>
+  <h1>会員ランク</h1>
 
   <div class="content">
-    <div class="service-card">
-      <h2>ラウンジアクセス</h2>
+    <div class="rank-card">
+      <h2>ブロンズ会員</h2>
       <p>
-        GALAXY AIRLINESの会員メンバーには、世界中の提携ラウンジへのアクセスが提供されます。リラックスできる空間で、フライト前の時間をお楽しみください。
+        初めてのご利用でもすぐにブロンズ会員に。特別割引やキャンペーン情報をいち早くお届けします。
       </p>
     </div>
 
-    <div class="service-card">
-      <h2>優先搭乗</h2>
+    <div class="rank-card">
+      <h2>シルバー会員</h2>
       <p>
-        GALAXY AIRLINESの会員メンバーは、通常の搭乗よりも早く搭乗手続きを行うことができます。スムーズな旅のスタートをお約束します。
+        一定の利用回数を超えるとシルバー会員に昇格。追加の手荷物許容量や優先チェックインなどの特典があります。
       </p>
     </div>
 
-    <div class="service-card">
-      <h2>特別メニュー</h2>
+    <div class="rank-card">
+      <h2>ゴールド会員</h2>
       <p>
-        機内で提供される特別メニューをお楽しみいただけます。シェフが厳選した食材を使用した料理で、フライト中も贅沢な時間をお過ごしください。
+        頻繁にご利用いただくお客様にはゴールド会員の特典をご用意。ラウンジアクセスや優先搭乗、特別メニューなどをお楽しみいただけます。
+      </p>
+    </div>
+
+    <div class="rank-card">
+      <h2>プラチナ会員</h2>
+      <p>
+        最上位のプラチナ会員には最高のサービスをご提供。専用カスタマーサポートやファーストクラスへのアップグレードなど、至高の旅をお楽しみください。
       </p>
     </div>
 

@@ -7,7 +7,7 @@ session_start();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>galトップページ</title>
+  <title>GALAXY AIRLINES</title>
   
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
@@ -21,6 +21,12 @@ session_start();
       display: flex;
       flex-direction: column;
       align-items: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     h1 {
@@ -52,6 +58,7 @@ session_start();
       transition: transform 0.8s ease;
       width: 300px;
       height: 200px;
+      animation: fadeIn 2s ease-in-out;
     }
 
     .card img {
@@ -89,6 +96,7 @@ session_start();
       transition: background-color 0.3s ease;
       position: absolute;
       right: 20px;
+      animation: fadeIn 2s ease-in-out;
     }
 
     .btn1 {
@@ -106,11 +114,11 @@ session_start();
     .username {
       position: absolute;
       top: 15%;
-      left: center;
       color: white;
       background: rgba(0, 0, 0, 0.5);
       padding: 10px;
       border-radius: 10px;
+      animation: fadeIn 2s ease-in-out;
     }
   </style>
 </head>
@@ -136,14 +144,14 @@ session_start();
     <div class="card">
       <img src="https://bluegreen.jp/wp-content/uploads/2019/07/IMGP0184--1024x768.jpg" alt="特別サービス">
       <div class="card-content">
-        <a href="https://www.jal.co.jp/jp/ja/">特別サービス</a>
+        <a href="templates/service.html">特別サービス</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://bluegreen.jp/wp-content/uploads/2019/07/IMGP0184--1024x768.jpg" alt="お問い合わせ">
+      <img src="https://bluegreen.jp/wp-content/uploads/2019/07/IMGP0184--1024x768.jpg" alt="会員ランク">
       <div class="card-content">
-        <a href="https://www.jal.co.jp/jp/ja/">会員ランク</a>
+        <a href="templates/prime.html">会員ランク</a>
       </div>
     </div>
   </div>
